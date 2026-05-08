@@ -1,0 +1,353 @@
+/* =========================================
+   إعدادات عامة
+========================================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fffaf0;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   شريط التنقل
+========================================= */
+
+nav {
+    background-color: #d35400;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   الهيدر
+========================================= */
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+
+/* =========================================
+   صفحة الفريق
+========================================= */
+
+.team-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 6px solid #d35400;
+}
+
+.team-container h3 {
+    color: #d35400;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-list li {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #fff9f2;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.team-list li:hover {
+    background-color: #fdebd0;
+    transform: scale(1.02);
+    color: #d35400;
+}
+
+.publish-box {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+}
+
+
+/* =========================================
+   صفحة من نحن
+========================================= */
+
+.about-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero-block {
+    background-color: #ffffff;
+    color: #555555;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-bottom: 6px solid #d35400;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid #d35400;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-card i {
+    font-size: 40px;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.contact-block {
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #dddddd;
+}
+
+.contact-item {
+    margin: 15px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.contact-item span {
+    display: block;
+    font-weight: bold;
+    color: #d35400;
+    margin-top: 10px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #d35400;
+}
+
+
+/* =========================================
+   صفحة الوجبات
+========================================= */
+
+.meals-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.small-card {
+    background: white;
+    width: 210px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card-body h4 {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+.card-code {
+    font-size: 10px;
+    color: #d35400;
+    font-weight: bold;
+}
+
+.card-price {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.meal-desc {
+    display: none;
+    font-size: 11px;
+    color: #555;
+    background: #fff4e6;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.card-footer {
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+}
+
+.check-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.continue-section {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* =========================================
+   الفورم
+========================================= */
+
+#orderFormSection {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#orderForm {
+    border-top: 5px solid #d35400;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#orderForm input {
+    width: 85%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#orderForm h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.btn-order {
+    background-color: #d35400;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   الفوتر
+========================================= */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+@media (max-width: 768px) {
+
+    #orderForm {
+        width: 90%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+}
